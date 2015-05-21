@@ -1,0 +1,6 @@
+[submodule "src/themes/next"]
+	path = src/themes/next
+	url = https://github.com/iissnan/hexo-theme-next
+[submodule "src/themes/wixo"]
+	path = src/themes/wixo
+	url = https://github.com/wzpan/hexo-theme-wixo

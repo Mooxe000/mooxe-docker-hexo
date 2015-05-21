@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "blog-server",
+      "script": "./bin/hexo.js",
+      "watch": [
+        "dist"
+      ],
+      "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
+      "instances": 1,
+      "exec_mode": "cluster_mode"
+      //"exec_mode": "fork_mode"
+    }
+  ]
+}

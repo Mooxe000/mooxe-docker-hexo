@@ -1,0 +1,15 @@
+.DS_Store
+.idea
+npm-debug.log
+*_book
+
+.tmp
+trash
+
+/**/bower_components
+/**/node_modules
+/**/dist
+/**/build
+
+pm2/logs/*.log
+pm2/pids/*.pid

@@ -1,0 +1,54 @@
+# PUBLIC CONFIG
+name: 'mooxe-docker-hexo'
+version: '0.0.0'
+description: 'mooxe-docker-hexo'
+author: 'FooTearth <footearth@gmail.com>'
+main: 'run.coffee'
+license: 'MIT'
+repository:
+  type: 'git'
+  url: 'https://github.com/Mooxe000/mooxe-docker-hexo.git'
+bugs:
+  url: 'https://github.com/Mooxe000/mooxe-docker-hexo/issues'
+homepage: 'https://github.com/Mooxe000/mooxe-docker-hexo'
+Keywords: [
+  'docker'
+  'daocloud'
+  'hexo'
+  'blog'
+]
+
+# BOWER CONFIG
+bower:
+  dependencies: []
+  devDependencies: []
+
+# NPM CONFIG
+npm:
+  bin: {}
+  scripts:
+    start: 'pm2 dump && pm2 startOrRestart ./bin/hexo.pm2.json'
+    stop: 'pm2 kill'
+    restart: 'npm stop; npm start'
+    build: './run.coffee'
+    test: ''
+  dependencies: []
+  devDependencies: [
+    'coffee-script'
+    'shelljs'
+    'toa'
+    'toa-static'
+  ]
+
+# NPB CONFIG
+npb:
+
+#  bower:
+#    root_allow: true
+  npm:
+    commander: 'npm' # default
+    # commander: 'cnpm'
+
+# -- build tools --
+#  build: 'gulp'  # default
+#  build: 'grunt'

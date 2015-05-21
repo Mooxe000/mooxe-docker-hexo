@@ -1,0 +1,37 @@
+{
+  "name": "mooxe-docker-hexo",
+  "version": "0.0.0",
+  "description": "mooxe-docker-hexo",
+  "author": "FooTearth <footearth@gmail.com>",
+  "main": "run.coffee",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mooxe000/mooxe-docker-hexo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mooxe000/mooxe-docker-hexo/issues"
+  },
+  "homepage": "https://github.com/Mooxe000/mooxe-docker-hexo",
+  "Keywords": [
+    "docker",
+    "daocloud",
+    "hexo",
+    "blog"
+  ],
+  "bin": {},
+  "scripts": {
+    "start": "pm2 dump && pm2 startOrRestart ./bin/hexo.pm2.json",
+    "stop": "pm2 kill",
+    "restart": "npm stop; npm start",
+    "build": "./run.coffee",
+    "test": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.9.2",
+    "shelljs": "^0.5.0",
+    "toa": "^0.9.2",
+    "toa-static": "^0.3.2"
+  }
+}
