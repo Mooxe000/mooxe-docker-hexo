@@ -30,7 +30,13 @@ npm:
     start: 'pm2 dump && pm2 startOrRestart ./bin/hexo.pm2.json'
     stop: 'pm2 kill'
     restart: 'npm stop; npm start'
+
     build: './run.coffee'
+
+    docker_build: 'docker build --rm -t mooxe/hexo ./'
+    docker_in: 'docker run -t -i -p 80:3000 mooxe/hexo /bin/bash/'
+    docker_run: 'docker run -d -p 80:3000 mooxe/hexo'
+
     test: ''
   dependencies: []
   devDependencies: [
